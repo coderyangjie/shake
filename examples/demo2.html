@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo2</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery-1.9.1/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="../jquery.shake.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Btn").click(function () {
+                $("#Input1").shake({ direction: "right" });
+                $("#Input2").shake({ direction: "left" });
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container" style="width: 200px;">
+    <form class="form">
+        <h2>Demo</h2>
+        <input id="Input1" class="form-control">
+        <br />
+        <input id="Input2" class="form-control">
+        <br />
+        <button id="Btn" class="btn btn-lg btn-primary btn-block"
+                type="button">Test</button>
+    </form>
+</div>
+</body>
+</html>
